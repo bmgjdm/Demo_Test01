@@ -1,0 +1,14 @@
+# 资源配置 优先级4
+person:
+  name: qwer${random.uuid}
+  age: ${random.int} #random 随机占位符
+  happy: true
+  brith: 2021/05/01
+  maps: {k1: v1,k2: v2}
+  hello: hei,jule
+  lists:
+    - code
+    - music
+  dog:
+    name: ${person.hello:hello}_饭团  #el表达式
+    age: 2
